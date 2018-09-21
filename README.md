@@ -1,6 +1,5 @@
 # nuxt2Test
 
-> My majestic Nuxt.js project
 
 ## Build Setup
 
