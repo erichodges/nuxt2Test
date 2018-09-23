@@ -72,7 +72,7 @@
 
 
 
-<style>
+<style lang="scss">
 /* disable-resize-watcher  - this keeps the app from adding the navigation-drawer on wider screens  */
 
   * {

@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .main {
   height: 100vh; 
@@ -120,7 +120,7 @@ h1 span:nth-of-type(2) {
   grid-column: 2 / 4; 
   margin-top: 4rem;
 
-  @media (only screen and (max-width: 750px)) {
+  @media only screen and (max-width: 750px) {
     grid-row: 5;    
   }
 
