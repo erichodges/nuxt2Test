@@ -77,6 +77,7 @@ export default {
     font-size: 2rem !important;
     font-family: Roboto;
     margin: 2rem;
+    margin-top: 4rem;
   }
   .table-text {
     font-size: 1rem;

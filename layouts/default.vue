@@ -1,18 +1,29 @@
 <template>
-  <v-app light>
+  <v-app dark>
     
-      <v-toolbar dense flat color="transparent">
+<!-- Navigation Toolbar -->
+    <v-toolbar app :clipped-left="true" dense flat color="transparent">
+        <v-toolbar-side-icon class="burger" @click="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title>
           <v-btn to="/" color="transparent" flat>
-          <h2 class="black--text">Site Logo</h2></v-btn>
+          <h2 class="white--text">MTAC Marin</h2></v-btn>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-toolbar-items>
-          <v-btn to="/signin" flat color="blue"><h3>Sign In</h3></v-btn>
-          <v-btn to="/signup" flat color="blue"><h3>Sign Up</h3></v-btn>
+        <v-toolbar-items class="toolbar-items">
+          <v-btn class="nav-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
+          <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
+          <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
+          <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
+          <v-btn class="nav-btn" to="/merit-cert" flat color="white"><h3>Merit Cert</h3></v-btn>
+          <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
+          <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
+          <div class="toolbar-spacer"></div>
         </v-toolbar-items>
-      </v-toolbar>        
-          <nuxt />  
+    </v-toolbar>  
+<!-- End Navigation Toolbar -->  
+    <div>
+          <nuxt />
+    </div>
   </v-app>
 </template>
 
