@@ -102,7 +102,7 @@ h1 span:nth-of-type(1) {
   /* autoprefixer: off */
   grid-row: 5;
   grid-column: 1 / 3; 
-  margin-top: 4rem;
+  margin-top: 6rem;
 
   @media only screen and (max-width: 750px) {
     grid-row: 5;    
@@ -118,7 +118,7 @@ h1 span:nth-of-type(2) {
   /* autoprefixer: off */
   grid-row: 5;
   grid-column: 2 / 4; 
-  margin-top: 4rem;
+  margin-top: 6rem;
 
   @media only screen and (max-width: 750px) {
     grid-row: 5;    

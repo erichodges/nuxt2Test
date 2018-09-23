@@ -5,7 +5,7 @@
       :items="teachers"
       hide-actions
       class="elevation-2 heading-text"
-      :loading="true"
+      :loading="false"
       >    
         <template slot="items" slot-scope="props">
           <td class="text-xs-left table-text">{{ props.item.instrument }}</td>
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
   .heading-text {
     font-size: 2rem !important;
