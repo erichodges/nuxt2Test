@@ -1,6 +1,25 @@
 <template>
   <v-app dark>
-    
+    <v-navigation-drawer dark class="drawer"
+      :mini-variant.sync="miniVariant"
+      :clipped="clipped"
+      v-model="drawer"
+      temporary
+      disable-resize-watcher
+      fixed
+      app
+      width=200
+    >
+     
+      <v-list>
+        <v-icon class="burger-drawer" @click="drawer = !drawer">close</v-icon>
+        <ul class="sidenav-ul">
+          <li class="sidenav-link-style">Products</li>  
+          <li class="sidenav-link-style">About</li>
+          <li class="sidenav-link-style">Contact</li>
+        </ul>
+      </v-list>            
+    </v-navigation-drawer>
 <!-- Navigation Toolbar -->
     <v-toolbar app :clipped-left="true" dense flat color="transparent">
         <v-toolbar-side-icon class="burger" @click="drawer = !drawer"></v-toolbar-side-icon>
@@ -31,17 +50,13 @@
   export default {
     data () {
       return {
-        clipped: false,
+        clipped: true,
         drawer: false,
         fixed: false,
-        items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-        ],
         miniVariant: false,
-        right: true,
+        right: false,
         rightDrawer: false,
-        title: 'MTAC Marin'
+        title: 'Nuxt/Vuetify'
       }
     }
   }
