@@ -11,8 +11,8 @@
           <td class="text-xs-left table-text">{{ props.item.instrument }}</td>
           <td class="text-xs-left table-text">{{ props.item.city }}</td>
           <td class="text-xs-left table-text">{{ props.item.travel }}</td>
-          <td class="table-text">{{ props.item.firstName }}</td>
-          <td class="table-text">{{ props.item.lastName }}</td>                        
+          <td class="text-xs-left table-text">{{ props.item.firstName }}</td>
+          <td class="text-xs-left table-text">{{ props.item.lastName }}</td>                        
           <td class="text-xs-left table-text">{{ props.item.phone }}</td>
           <td class="text-xs-left table-text">{{ props.item.email }}</td>
         </template>
@@ -31,13 +31,13 @@ export default {
     return {
       teachers: [],
       headers: [
-        { text: 'Instrument', value: 'instrument', align: 'left' },
-        { text: 'City', value: 'city', align: 'left' },
-        { text: 'Will Travel?', value: 'travel' },
+        { text: 'Instrument', value: 'instrument', align: 'left', class: 'heading-text' },
+        { text: 'City', value: 'city', align: 'left', class: 'heading-text' },
+        { text: 'Will Travel?', value: 'travel', class: 'heading-text'  },
         { text: 'First Name', value: 'firstName', class: 'heading-text' },
         { text: 'Last Name', value: 'lastName', class: 'heading-text' },
-        { text: 'Phone', value: 'phone' },
-        { text: 'email', value: 'email' }
+        { text: 'Phone', value: 'phone', class: 'heading-text' },
+        { text: 'email', value: 'email', class: 'heading-text' }
       ]
     }
   },
@@ -74,7 +74,7 @@ export default {
 <style lang="scss" scoped>
 
   .heading-text {
-    font-size: 2rem !important;
+    font-size: 1rem !important;
     font-family: Roboto;
     margin: 2rem;
     margin-top: 4rem;
