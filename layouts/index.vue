@@ -174,8 +174,12 @@ html {
     background-image: url('/images/575839-900px.jpg');
   }
 
-  @media (min-width: 400px) and (max-width: 751px) {
+  @media (min-width: 400px) and (max-width: 752px) {
     background-image: url('/images/575839-752px.jpg');
+  }
+
+  @media (min-width: 300px) and (max-width: 651px) {
+    background-image: url('/images/575839-651px.jpg');
   }
 
   @media (min-width: 2500px) and (max-width: 3799px) {
