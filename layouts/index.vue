@@ -14,9 +14,13 @@
       <v-list>
         <v-icon class="burger-drawer" @click="drawer = !drawer">close</v-icon>
         <ul class="sidenav-ul">
-          <li class="sidenav-link-style">Products</li>  
-          <li class="sidenav-link-style">About</li>
-          <li class="sidenav-link-style">Contact</li>
+          <v-btn class="nav-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
+          <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
+          <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
+          <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
+          <v-btn class="nav-btn" to="/merit-cert" flat color="white"><h3>Merit Cert</h3></v-btn>
+          <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
+          <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
         </ul>
       </v-list>            
     </v-navigation-drawer>
@@ -134,7 +138,7 @@ html {
 }
 .sidenav-link-style {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   list-style: none;
   margin: 10px;
   text-decoration: none;
