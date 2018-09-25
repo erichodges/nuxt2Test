@@ -29,9 +29,9 @@ export default {
     return {
       teachers: [],
       headers: [
-        { text: 'Date', value: 'date', align: 'left' },
-        { text: 'Time', value: 'time', align: 'left' },
-        { text: 'Activity', value: 'activity' },
+        { text: 'Date', value: 'date', align: 'left', class: 'heading-text' },
+        { text: 'Time', value: 'time', align: 'left', class: 'heading-text' },
+        { text: 'Activity', value: 'activity', class: 'heading-text' },
         { text: 'Location', value: 'location', class: 'heading-text' },
         { text: 'Chair', value: 'chair', class: 'heading-text' }
       ]

@@ -5,7 +5,7 @@
       :items="teachers"
       hide-actions
       class="elevation-2 heading-text"
-      :loading="false"
+      :loading="false"      
       >    
         <template slot="items" slot-scope="props">
           <td class="text-xs-left table-text">{{ props.item.instrument }}</td>
@@ -24,7 +24,6 @@
 
 <script>
 import axios from 'axios'
-// require('dotenv').config();
 
 export default {
   data () {
@@ -80,7 +79,7 @@ export default {
     margin-top: 4rem;
   }
   .table-text {
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-family: Roboto;    
   }
 </style>
