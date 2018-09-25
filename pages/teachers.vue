@@ -5,7 +5,7 @@
       :items="teachers"
       hide-actions
       class="elevation-2 heading-text"
-      :loading="false"      
+      :loading="false"    
       >    
         <template slot="items" slot-scope="props">
           <td class="text-xs-left table-text">{{ props.item.instrument }}</td>

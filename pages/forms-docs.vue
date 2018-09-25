@@ -1,6 +1,6 @@
 <template>
 <v-container>
-  <v-layout>
+  <v-layout>    
   <v-form ref="form" class="form" v-model="valid" lazy-validation>
     <v-select
       v-model="select"
@@ -60,7 +60,7 @@
     ></v-text-field>
     <v-select
       v-model="select"
-      :items="itemsP1"
+      :items="pieceOne"
       label="Is the first piece a piano duet?"      
     ></v-select>
     <v-text-field
@@ -72,7 +72,7 @@
     ></v-text-field>
     <v-select
       v-model="select"
-      :items="itemsP2"
+      :items="itemsPtwo"
       label="Is the second piece a piano duet?"
     ></v-select>
     <v-text-field
@@ -140,11 +140,11 @@
         'Date TBA - Composition & Improvisation Celbration - Deadline: TBA',
         'June 3 - Spring Festival - Deadline: May 26'
       ],
-      itemsP1: [
+      pieceOne: [
         'Yes',
         'No'
       ],
-      itemsP2: [
+      itemsPtwo: [
         'Yes',
         'No'
       ],

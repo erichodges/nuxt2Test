@@ -10,7 +10,6 @@
       app
       width=200
     >
-     
       <v-list>
         <v-icon class="burger-drawer" @click="drawer = !drawer">close</v-icon>
         <ul class="sidenav-ul">
@@ -25,7 +24,7 @@
       </v-list>            
     </v-navigation-drawer>
 <!-- Navigation Toolbar -->
-    <v-toolbar app :clipped-left="true" dense flat color="transparent">
+    <v-toolbar app :clipped-left="true" dense flat color="transparent" scroll-off-screen scrolling-target="">
         <v-toolbar-side-icon class="burger" @click="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title>
           <v-btn to="/" color="transparent" flat>
