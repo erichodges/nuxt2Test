@@ -8,7 +8,7 @@
       :loading="false"    
       >    
         <template slot="items" slot-scope="props">
-          <td style="font-size:1rem" class="text-xs-left table-text" id="td-id">{{ props.item.instrument }}</td>
+          <td style="font-size:1rem" class="text-xs-left table-text">{{ props.item.instrument }}</td>
           <td class="text-xs-left table-text">{{ props.item.city }}</td>
           <td class="text-xs-left table-text">{{ props.item.travel }}</td>
           <td class="text-xs-left table-text">{{ props.item.firstName }}</td>
@@ -70,11 +70,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-  table.v-table thead th .heading-text {
-    font-size: 1rem;
-  }
+<style lang="scss">
 
   .heading-text {
     font-size: 1rem !important;

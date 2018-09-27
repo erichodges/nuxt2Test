@@ -67,10 +67,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 
   .heading-text {
-    font-size: 2rem !important;
+    font-size: 1rem;
     font-family: Roboto;
     margin: 2rem;
     margin-top: 4rem;
