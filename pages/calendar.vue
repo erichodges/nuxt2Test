@@ -3,8 +3,9 @@
     <v-data-table
     :headers="headers"
     :items="teachers"
-    hide-actions
-    class="elevation-2 heading-text"
+    :pagination.sync="pagination"
+    :rows-per-page-items="rows"
+    class="elevation-2 calendar-text"
     :loading="false"
     >    
       <template slot="items" slot-scope="props">
@@ -29,12 +30,16 @@ export default {
     return {
       teachers: [],
       headers: [
-        { text: 'Date', value: 'date', align: 'left', class: 'heading-text' },
-        { text: 'Time', value: 'time', align: 'left', class: 'heading-text' },
-        { text: 'Activity', value: 'activity', class: 'heading-text' },
-        { text: 'Location', value: 'location', class: 'heading-text' },
-        { text: 'Chair', value: 'chair', class: 'heading-text' }
-      ]
+        { text: 'Date', value: 'date', align: 'left', class: 'calendar-text' },
+        { text: 'Time', value: 'time', align: 'left', class: 'calendar-text' },
+        { text: 'Activity', value: 'activity', class: 'calendar-text' },
+        { text: 'Location', value: 'location', class: 'calendar-text' },
+        { text: 'Chair', value: 'chair', class: 'calendar-text' }
+      ],
+      rows: [ { text: 'All', value: -1 }, 5, 10, 20],
+      pagination: {
+        sortBy: 'date'
+      }
     }
   },
   components: {
@@ -62,21 +67,27 @@ export default {
         .then(response => {
           this.onConvert(response.data.values)
         })
-    }
+    },
+    nextSort () {
+      let index = this.headers.findIndex(h => h.value === this.pagination.sortBy)
+      index = (index + 1) % this.headers.length
+      index = index === 0 ? index + 1 : index
+      this.pagination.sortBy = this.headers[index].value
+      }
   }
 }
 </script>
 
 <style lang="scss">
 
-  .heading-text {
-    font-size: 1rem;
+  .calendar-text {
+    font-size: 1rem !important;
     font-family: Roboto;
     margin: 2rem;
     margin-top: 4rem;
   }
   .table-text {
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-family: Roboto;
   }
 </style>

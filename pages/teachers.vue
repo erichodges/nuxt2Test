@@ -36,13 +36,13 @@ export default {
         { text: 'Will Travel?', value: 'travel', class: 'heading-text'  },
         { text: 'First Name', value: 'firstName', class: 'heading-text' },
         { text: 'Last Name', value: 'lastName', class: 'heading-text' },
-        { text: 'Phone', value: 'phone', class: 'heading-text' },
+        { text: 'Phone', value: 'phone', class: 'heading-text phone', width: '147' },
         { text: 'email', value: 'email', class: 'heading-text' }
       ],
       rows: [ { text: 'All', value: -1 }, 5, 10, 20],
       pagination: {
-          sortBy: 'city'
-        }
+        sortBy: 'city'
+      }
     }
   },
   components: {
@@ -83,12 +83,18 @@ export default {
 
 <style lang="scss">
 
+  .phone {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+
   .heading-text {
     font-size: 1rem !important;
     font-family: Roboto;
     margin: 2rem;
     margin-top: 4rem;
   }
+
   .table-text {
     font-size: 1rem !important;
     font-family: Roboto;    
