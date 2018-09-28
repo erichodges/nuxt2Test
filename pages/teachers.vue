@@ -3,7 +3,8 @@
       <v-data-table
       :headers="headers"
       :items="teachers"
-      hide-actions
+      :pagination.sync="pagination"
+      :rows-per-page-items="rows"
       class="elevation-2 heading-text"
       :loading="false"    
       >    
@@ -37,7 +38,11 @@ export default {
         { text: 'Last Name', value: 'lastName', class: 'heading-text' },
         { text: 'Phone', value: 'phone', class: 'heading-text' },
         { text: 'email', value: 'email', class: 'heading-text' }
-      ]
+      ],
+      rows: [ { text: 'All', value: -1 }, 5, 10, 20],
+      pagination: {
+          sortBy: 'city'
+        }
     }
   },
   components: {
@@ -65,7 +70,13 @@ export default {
         .then(response => {
           this.onConvert(response.data.values)
         })
-    }
+    },
+      nextSort () {
+        let index = this.headers.findIndex(h => h.value === this.pagination.sortBy)
+        index = (index + 1) % this.headers.length
+        index = index === 0 ? index + 1 : index
+        this.pagination.sortBy = this.headers[index].value
+      }
   }
 }
 </script>
