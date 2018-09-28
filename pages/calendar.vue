@@ -36,6 +36,9 @@ export default {
         { text: 'Location', value: 'location', class: 'calendar-text' },
         { text: 'Chair', value: 'chair', class: 'calendar-text' }
       ],
+      toggleOrder () {
+        this.pagination.ascending = !this.pagination.ascending
+      },
       rows: [ { text: 'All', value: -1 }, 5, 10, 20],
       pagination: {
         sortBy: 'date'
