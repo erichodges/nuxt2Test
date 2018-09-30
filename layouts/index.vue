@@ -14,13 +14,13 @@
       <v-list>
         <v-icon class="burger-drawer" @click="drawer = !drawer">close</v-icon>
         <ul class="sidenav-ul">
-          <v-btn class="nav-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
+          <v-btn class="nav-btn about-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
           <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
           <v-btn class="nav-btn" to="/merit-cert" flat color="white"><h3>Merit Cert</h3></v-btn>
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
-          <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
+          <v-btn class="nav-btn about-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
         </ul>
       </v-list>            
     </v-navigation-drawer>
@@ -134,8 +134,9 @@ html {
 
 /* Side Nav  */
 .sidenav-ul {
-  padding-left: 2.7rem;
+  padding-left: 2.7rem; 
 }
+
 .sidenav-link-style {
   cursor: pointer;
   font-size: 1rem;
@@ -143,6 +144,10 @@ html {
   margin: 10px;
   text-decoration: none;
   
+}
+
+.about-btn .v-btn__content {
+  justify-content: left;
 }
 /* End Side Nav */
 
