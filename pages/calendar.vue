@@ -41,7 +41,7 @@ export default {
       },
       rows: [ { text: 'All', value: -1 }, 5, 10, 20],
       pagination: {
-        sortBy: 'date'
+        sortBy: 'count'
       }
     }
   },
