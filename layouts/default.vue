@@ -8,7 +8,7 @@
       disable-resize-watcher
       fixed
       app
-      width=200
+      width=180
     >
       <v-list>
         <v-icon class="burger-drawer" @click="drawer = !drawer">close</v-icon>

@@ -8,7 +8,7 @@
       disable-resize-watcher
       fixed
       app
-      width=200
+      width=180
     >
      
       <v-list>
@@ -134,7 +134,7 @@ html {
 
 /* Side Nav  */
 .sidenav-ul {
-  padding-left: 2.7rem; 
+  padding-left: 1rem; 
 }
 
 .sidenav-link-style {
