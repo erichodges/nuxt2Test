@@ -4,101 +4,98 @@
   <v-form ref="form" class="form" v-model="valid" lazy-validation>
     <v-select
       v-model="select"
-      :items="itemsRecital"
+      :items="recital"
       :rules="[v => !!v || 'Item is required']"
       label="Which Recital?"
       required
     ></v-select>
     <v-text-field
-      v-model="name"
+      v-model="teacherName"
       :rules="nameRules"
       :counter="10"
       label="Teacher Name"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="studentName"
       :rules="nameRules"
       :counter="10"
       label="Student Name"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="age"
       :rules="nameRules"
       :counter="10"
       label="Student Age"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="level"
       :rules="nameRules"
       :counter="10"
       label="Student Level"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="piece_1"
       :rules="nameRules"
       :counter="10"
       label="Piece No. 1 (Include composer)"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="piece_2"
       :rules="nameRules"
       :counter="10"
       label="Piece No. 2 (Include composer)"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="length"
       :rules="nameRules"
       :counter="10"
       label="Total Length (Both Pieces)"
       required
     ></v-text-field>
     <v-select
-      v-model="select"
-      :items="pieceOne"
+      v-model="selectPiece_1"
+      :items="selectPiece_1"
       label="Is the first piece a piano duet?"      
     ></v-select>
     <v-text-field
-      v-model="name"
-      :rules="nameRules"
+      v-model="accompanist_1"
       :counter="10"
       label="If so, please list the accompanist"
       required
     ></v-text-field>
     <v-select
-      v-model="select"
-      :items="itemsPtwo"
+      v-model="selectPiece_2"
+      :items="selectPiece_2"
       label="Is the second piece a piano duet?"
     ></v-select>
     <v-text-field
-      v-model="name"
-      :rules="nameRules"
+      v-model="accompanist_2"
       :counter="10"
       label="If so, please list the accompanist"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
-      :rules="nameRules"
+      v-model="instrument"
       :counter="10"
       label="If student is not a pianist, list the instrument"      
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="instrumentation_1"
       :rules="nameRules"
-      :counter="10"
+      :counter="100"
       label="Instrumentation of Piece No. 1 (Include all performers' names"
       required
     ></v-text-field>
     <v-text-field
-      v-model="name"
+      v-model="instrumentation_2"
       :rules="nameRules"
-      :counter="10"
+      :counter="100"
       label="Instrumentation of Piece No. 2 (Include all performers' names"
       required
     ></v-text-field>
@@ -107,9 +104,9 @@
       :disabled="!valid"
       @click="submit"
     >
-      submit
+      Submit
     </v-btn>
-    <v-btn @click="clear">clear</v-btn>
+    <v-btn @click="clear">Reset</v-btn>
   </v-form>
   </v-layout>
   </v-container>
@@ -121,18 +118,7 @@
   export default {
     data: () => ({
       valid: true,
-      name: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters'
-      ],
-      email: '',
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid'
-      ],
-      select: null,
-      itemsRecital: [
+      recital: [
         'November 11 - Monthly Student Recital - Deadline: Nov. 6',
         'February 10 - Teen Recial - Ceadline: Feb. 3',
         'March 10 - Monthly Student Recital - Deadline: Mar. 3',
@@ -140,20 +126,31 @@
         'Date TBA - Composition & Improvisation Celbration - Deadline: TBA',
         'June 3 - Spring Festival - Deadline: May 26'
       ],
-      pieceOne: [
+      teacherName: '',
+      nameRules: [
+        v => !!v || 'Name is required',
+        v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+      ],
+      studentName: '',
+      age: '',
+      level: '',
+      piece_1: '',
+      piece_2: '',
+      length: '',
+      select: null,
+      selectPiece_1: [
         'Yes',
         'No'
       ],
-      itemsPtwo: [
+      accompanist_1: '',
+      selectPiece_2: [
         'Yes',
         'No'
       ],
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4'
-      ]
+      accompanist_2: '',
+      instrument: '',
+      instrumentation_1: '',
+      instrumentation_2: ''
     }),
 
     methods: {
@@ -178,6 +175,6 @@
 <style>
 .form {
   width: 32rem;
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 </style>
