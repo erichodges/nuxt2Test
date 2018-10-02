@@ -1,8 +1,9 @@
 <template>
 <v-container>
   <v-layout>    
-  <v-form ref="form" class="form" v-model="valid" lazy-validation>
+  <v-form ref="form" class="form" v-model="valid" lazy-validation action="https://formspree.io/mtac@iw401fi.33mail.com" method="post">
     <v-select
+      name="recitalItems"
       v-model="select"
       :items="recital"
       :rules="[v => !!v || 'Item is required']"
@@ -10,6 +11,7 @@
       required
     ></v-select>
     <v-text-field
+      name="teacher name"
       v-model="teacherName"
       :rules="nameRules"
       :counter="10"
@@ -100,7 +102,7 @@
       required
     ></v-text-field>
     <br>
-    <v-btn
+    <v-btn type="submit" value="send"
       :disabled="!valid"
       @click="submit"
     >
@@ -154,17 +156,6 @@
     }),
 
     methods: {
-      submit () {
-        if (this.$refs.form.validate()) {
-          // Native form submission is not yet supported
-          axios.post('/api/submit', {
-            name: this.name,
-            email: this.email,
-            select: this.select,
-            checkbox: this.checkbox
-          })
-        }
-      },
       clear () {
         this.$refs.form.reset()
       }
