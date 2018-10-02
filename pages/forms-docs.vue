@@ -60,7 +60,7 @@
     ></v-text-field>
     <v-select
       v-model="selectPiece_1"
-      :items="selectPiece_1"
+      :items="itemsSelectPiece_1"
       label="Is the first piece a piano duet?"      
     ></v-select>
     <v-text-field
@@ -71,7 +71,7 @@
     ></v-text-field>
     <v-select
       v-model="selectPiece_2"
-      :items="selectPiece_2"
+      :items="itemsSelectPiece_2"
       label="Is the second piece a piano duet?"
     ></v-select>
     <v-text-field
@@ -138,12 +138,12 @@
       piece_2: '',
       length: '',
       select: null,
-      selectPiece_1: [
+      itemsSelectPiece_1: [
         'Yes',
         'No'
       ],
       accompanist_1: '',
-      selectPiece_2: [
+      itemsSelectPiece_2: [
         'Yes',
         'No'
       ],
