@@ -24,7 +24,7 @@
       </v-list>            
     </v-navigation-drawer>
 <!-- Navigation Toolbar -->
-    <v-toolbar app :clipped-left="true" dense flat color="transparent" scroll-off-screen scrolling-target="">
+    <v-toolbar app :clipped-left="true" dense flat color="primary" scroll-off-screen scrolling-target="">
         <v-toolbar-side-icon class="burger" @click="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title>
           <v-btn to="/" color="transparent" flat>
@@ -72,6 +72,7 @@
 /* this removes all caps from the buttons */
   #app .btn {
     text-transform: none !important;
+    color: #4e4e4e;
   }
 
 .about-btn .v-btn__content {
