@@ -166,6 +166,6 @@
 <style>
 .form {
   width: 32rem;
-  margin-top: 7rem;
+  margin-top: 6.5rem;
 }
 </style>
