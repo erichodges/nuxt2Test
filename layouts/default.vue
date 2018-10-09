@@ -24,7 +24,7 @@
       </v-list>            
     </v-navigation-drawer>
 <!-- Navigation Toolbar -->
-    <v-toolbar app :clipped-left="true" dense flat color="primary" scroll-toolbar-off-screen="true">
+    <v-toolbar app :clipped-left="true" dense flat color="primary" :scroll-toolbar-off-screen="true">
         <v-toolbar-side-icon class="burger" @click="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title>
           <v-btn to="/" color="transparent" flat>
