@@ -73,14 +73,7 @@ module.exports = {
           options: {
             fix : true
           }
-        })
-      }
-      if (ctx.isServer) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
+        });
       }
     }
   }
