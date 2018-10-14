@@ -2,7 +2,7 @@
   <main>
     <v-container class="teacher-header">
     <div>
-      <h1 class="teacher-header">Teacher Directory</h1>
+      <h1 class="teacher-header">Music Teacher Directory</h1>
       <p>
         The following teachers have met the educaiton requirements and are approved members of the Marin Branch of the Music Teachers' Association of California. 
       </p>
