@@ -1,24 +1,37 @@
 <template>
-  <div>    
-      <v-data-table
-      :headers="headers"
-      :items="teachers"
-      :pagination.sync="pagination"
-      :rows-per-page-items="rows"
-      class="elevation-2 heading-text"
-      :loading="false"    
-      >    
-        <template slot="items" slot-scope="props">
-          <td style="font-size:1rem" class="text-xs-left table-text">{{ props.item.instrument }}</td>
-          <td class="text-xs-left table-text">{{ props.item.city }}</td>
-          <td class="text-xs-left table-text">{{ props.item.travel }}</td>
-          <td class="text-xs-left table-text">{{ props.item.firstName }}</td>
-          <td class="text-xs-left table-text">{{ props.item.lastName }}</td>                        
-          <td class="text-xs-left table-text">{{ props.item.phone }}</td>
-          <td class="text-xs-left table-text">{{ props.item.email }}</td>
-        </template>
-      </v-data-table>
-  </div>
+  <main>
+    <v-container class="teacher-header">
+    <div>
+      <h1 class="teacher-header">Teacher Directory</h1>
+      <p>
+        The following teachers have met the educaiton requirements and are approved members of the Marin Branch of the Music Teachers' Association of California. 
+      </p>
+      <p>
+        We offer lessons to students of all ages in piano, organ, harpsichord, violin, viola, cello, flute, clarinet, saxophone, voice, conducting, music theory, composition, harp and accordion.
+      </p>
+    </div>
+    </v-container>
+    <div>    
+        <v-data-table
+        :headers="headers"
+        :items="teachers"
+        :pagination.sync="pagination"
+        :rows-per-page-items="rows"
+        class="elevation-2 heading-text"
+        :loading="false"    
+        >    
+          <template slot="items" slot-scope="props">
+            <td style="font-size:1rem" class="text-xs-left table-text">{{ props.item.instrument }}</td>
+            <td class="text-xs-left table-text">{{ props.item.city }}</td>
+            <td class="text-xs-left table-text">{{ props.item.travel }}</td>
+            <td class="text-xs-left table-text">{{ props.item.firstName }}</td>
+            <td class="text-xs-left table-text">{{ props.item.lastName }}</td>                        
+            <td class="text-xs-left table-text">{{ props.item.phone }}</td>
+            <td class="text-xs-left table-text">{{ props.item.email }}</td>
+          </template>
+        </v-data-table>
+    </div>
+  </main>
 </template>
 
 
@@ -83,20 +96,24 @@ export default {
 
 <style lang="scss">
 
-  .phone {
-    padding-left: 45px !important;
-    padding-right: 45px !important;
-  }
+.teacher-header {
+  margin-top: 2rem;
+}
 
-  .heading-text {
-    font-size: 1rem !important;
-    font-family: Roboto;
-    margin: 2rem;
-    margin-top: 4rem;
-  }
+.phone {
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+}
 
-  .table-text {
-    font-size: 1rem !important;
-    font-family: Roboto;    
-  }
+.heading-text {
+  font-size: 1rem !important;
+  font-family: Roboto;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+
+.table-text {
+  font-size: 1rem !important;
+  font-family: Roboto;    
+}
 </style>
