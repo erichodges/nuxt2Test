@@ -30,7 +30,7 @@
         <v-toolbar-side-icon class="burger" @click="drawer = !drawer"></v-toolbar-side-icon>
         <v-toolbar-title>
           <v-btn to="/" color="transparent" flat>
-          </v-btn>
+          <img src="/images/mtac-logo.png" alt="MTAC Marin"></v-btn>
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="toolbar-items">
