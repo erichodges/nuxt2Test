@@ -41,14 +41,16 @@ export default {
   
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-  grid-template-rows: repeat(8, vw);
+  grid-template-rows: 350px 250px;
   grid-gap: 1rem;
-  
+  grid-auto-flow: dense;
 
   &__item {
-    &--1 {
-      grid-row: 1/1;
-      grid-column: 1/1;
+    &--2 {
+      // grid-row: 2 / span 1;
+      // height: 100%;
+      // width: 100%;
+      // object-fit: cover;
     }
   }
 
@@ -59,6 +61,15 @@ export default {
     display: block;
   }
 
+  @media (max-width: 800px) {
+    grid-template-rows: 350px 350px;
+  }
+  @media (max-width: 375px) {
+    grid-auto-columns: 350px;
+    // grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+    grid-auto-rows: 20px;
+    // grid-template-rows: 150px 100px;
+  }
 }
 
 
