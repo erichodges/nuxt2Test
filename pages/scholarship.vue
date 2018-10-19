@@ -3,7 +3,7 @@
     <h1>Discovery Scholarship</h1>
     <br>
     <p>
-      In 1984 the Marin branch of the Music Teachers’ Association of California (MTAC) founded the Discovery scholarship program, a California 501(c)3 non-profit corporation, for the purpose of providing private music lessons to children from low-income families. Discovery Scholarship attempts to fill that gap for at least some families. Discovery Scholarship started with three students in 1984 and has grown to twelve students.
+      In 1984 the Marin branch of the Music Teachers’ Association of California (MTAC) founded the Discovery Scholarship program, a California 501(c)3 non-profit corporation, for the purpose of providing private music lessons to children from low-income families. Discovery Scholarship attempts to fill that gap for at least some families. Discovery Scholarship started with three students in 1984 and has grown to twelve students.
     </p>
       Lessons are offered in a wide variety of instruments. Recipients are chosen through a rigorous screening process involving an extensive written application, documentation of financial need, letters of recommendations from teachers (and others) and a personal interview with the three-member Scholarship Committee.
     <p>

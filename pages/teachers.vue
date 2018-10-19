@@ -4,7 +4,7 @@
     <div>
       <h1 class="teacher-header">Music Teacher Directory</h1>
       <p>
-        The following teachers have met the educaiton requirements and are approved members of the Marin Branch of the Music Teachers' Association of California. 
+        The following teachers have met the education requirements and are approved members of the Marin Branch of the Music Teachers' Association of California. 
       </p>
       <p>
         We offer lessons to students of all ages in piano, organ, harpsichord, violin, viola, cello, flute, clarinet, saxophone, voice, conducting, music theory, composition, harp and accordion.
