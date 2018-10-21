@@ -79,7 +79,7 @@ export default {
     },
     getData () {
       return axios
-        .get(`https://sheets.googleapis.com/v4/spreadsheets/1SIfFSp_1In8V_NmIGjVtry-7478OJosu91J_toQT7gs/values/Sheet1?valueRenderOption=FORMATTED_VALUE&key=${process.env.TEACHERS_KEY}`)
+        .get(`https://sheets.googleapis.com/v4/spreadsheets/1IGposbdT8R8j6UdmGtAFgI_39LZL8UWOIIpnsyC23mM/values/Sheet1?valueRenderOption=FORMATTED_VALUE&key=${process.env.TEACHERS_KEY}`)
         .then(response => {
           this.onConvert(response.data.values)
         })
