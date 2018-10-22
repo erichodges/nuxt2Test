@@ -1,6 +1,6 @@
 <template>
   <v-container class="heading">
-    <h1>Highly qualified and experienced music teachers in Marin</h1>
+    <h1>Highly Qualified and Experienced Music Teachers in Marin</h1>
     <br>
     <p>
       MTAC Marin is one of more than 67 self-governing branches that are affiliated with the Music Teachers' Association of California. We are a local professional organization of highly qualified and experienced music teachers. We live in your neighborhood and we are dedicated to excellence in our teaching and to fostering a life-long love of music in our students. 
