@@ -18,7 +18,6 @@
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
           <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
-          <v-btn class="nav-btn about-btn" to="/merit-cert" flat color="white"><h3>CM</h3></v-btn>
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn about-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
         </ul>
@@ -38,7 +37,6 @@
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
           <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
-          <v-btn class="nav-btn" to="/merit-cert" flat color="white"><h3>CM</h3></v-btn>
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
           <div class="toolbar-spacer"></div>
@@ -48,18 +46,21 @@
     <div class="div-with-background">
 
       <nuxt />
-      
-      <Footer />
+
+      <v-footer class="index-footer" dark height="auto">
+        <div class="caption copy">
+        &copy;2018 MTAC Marin
+        </div>
+          <div class="state-logo">
+            <img class="logo-img" src="/images/mtac-state-logo.png" alt="MTAC Marin Branch logo">
+          </div>
+      </v-footer>
     </div>
   </v-app>
 </template>
 
 <script>
-  import Footer from '~/components/Footer'
   export default {
-    components: {
-      Footer
-    },
     data () {
       return {
         clipped: true,
@@ -77,7 +78,7 @@
 
 
 <style lang="scss">
-/* disable-resize-watcher  - this keeps the app from adding the navigation-drawer on wider screens  */
+/* disable-resize-watcher in v-navigation-drawer - this keeps the app from adding the navigation-drawer on wider screens  */
 
   * {
   box-sizing: border-box; }
@@ -204,5 +205,19 @@ html {
     text-transform: none;
   }
 
+.index-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.copy {
+  margin-top: auto;
+  margin-left: 1.3rem;
+  padding: 5px 5px;
+}
+
+.state-logo {
+  margin-top: .3rem;
+  margin-right: 1.3rem;
+}
 
 </style>

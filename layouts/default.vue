@@ -17,7 +17,6 @@
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
           <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
-          <v-btn class="nav-btn about-btn" to="/merit-cert" flat color="white"><h3>CM</h3></v-btn>
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn about-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
         </ul>
@@ -36,7 +35,6 @@
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
           <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
-          <v-btn class="nav-btn" to="/merit-cert" flat color="white"><h3>CM</h3></v-btn>
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
           <div class="toolbar-spacer"></div>
@@ -44,8 +42,13 @@
     </v-toolbar>  
 <!-- End Navigation Toolbar -->  
     <div>
-          <nuxt />
+      <nuxt /> 
     </div>
+    <v-footer dark height="auto">
+      <div class="caption copy">
+        &copy;2018 MTAC Marin
+      </div>
+    </v-footer>
   </v-app>
 </template>
 
@@ -66,8 +69,7 @@
 </script>
 
 
-<style lang="scss">
-
+<style lang="scss" scoped>
 
 /* this removes all caps from the buttons */
   #app .btn {
@@ -79,4 +81,8 @@
   justify-content: left;
 }
 
+.copy {
+  margin-left: 1.3rem;
+  padding: 5px 5px;
+}
 </style>

@@ -16,13 +16,6 @@
       Discovery is financed through an annual fund-raising mailing, grants from several local non-profits and by many local Marin county residents who believe that music can offer a window into a world not generally available to low-income children.
     </p>
     <br>
-    <h1>
-      Margaret Bean Davis Memorial Piano Competition
-    </h1>
-    <br>
-    <p>
-      Our performance competition is named in honor of Margaret Bean Davis, a wonderful musician and composer who was also a long-time supporter of music in Marin County.   Each year talented young pianists compete before three distinguished pianists in six levels:  Intermediate A, B, C and D and Advanced A and B.  The winners then perform at an annual Winners' Recital in the late spring.
-    </p>
   </v-container>
 </template>
 
@@ -36,5 +29,6 @@ export default {
 <style lang="scss">
 .scholar-header {
   margin-top: 4rem;
+  height: 100vh;
 }
 </style>
