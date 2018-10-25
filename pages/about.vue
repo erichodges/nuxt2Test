@@ -49,7 +49,10 @@
 </script>
 
 <style lang="scss">
+
   .heading {
     margin-top: 4rem;
   }
+
+ 
 </style>

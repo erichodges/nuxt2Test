@@ -69,7 +69,7 @@
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 /* this removes all caps from the buttons */
   #app .btn {
@@ -80,6 +80,7 @@
 .about-btn .v-btn__content {
   justify-content: left;
 }
+
 
 .copy {
   margin-left: 1.3rem;
