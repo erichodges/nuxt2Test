@@ -81,7 +81,14 @@
   justify-content: left;
 }
 
+h1 {
+    color: #B92013;
+  }
 
+h2 {
+    color: #B92013;
+  }
+  
 .copy {
   margin-left: 1.3rem;
   padding: 5px 5px;
