@@ -82,11 +82,11 @@
 }
 
 h1 {
-    color: #B92013;
+    color: #D73F4C;
   }
 
 h2 {
-    color: #B92013;
+    color: #D73F4C;
   }
 
 
