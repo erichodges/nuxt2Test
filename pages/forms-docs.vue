@@ -2,6 +2,7 @@
 <v-container>
   <v-layout>    
   <v-form ref="form" class="form" v-model="valid" lazy-validation action="" name="recital" method="post" netlify>
+    <input type="hidden" name="form-name" value="recital" />
     <v-select
       name="recitalItems"
       v-model="select"
