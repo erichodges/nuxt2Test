@@ -52,7 +52,7 @@
         &copy;2018 MTAC Marin
         </div>
           <div class="state-logo">
-            <img class="logo-img" src="/images/mtac-state-logo.png" alt="MTAC Marin Branch logo">
+            <img class="logo-img" src="/images/MTACM-state.png" alt="MTAC Marin Branch logo">
           </div>
       </v-footer>
     </div>
