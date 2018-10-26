@@ -15,14 +15,14 @@
       name="teacher name"
       v-model="teacherName"
       :rules="nameRules"
-      :counter="10"
+      :counter="30"
       label="Teacher Name"
       required
     ></v-text-field>
     <v-text-field
       v-model="studentName"
       :rules="nameRules"
-      :counter="10"
+      :counter="30"
       label="Student Name"
       required
     ></v-text-field>
@@ -36,28 +36,28 @@
     <v-text-field
       v-model="level"
       :rules="nameRules"
-      :counter="10"
+      :counter="20"
       label="Student Level"
       required
     ></v-text-field>
     <v-text-field
       v-model="piece_1"
       :rules="nameRules"
-      :counter="10"
+      :counter="30"
       label="Piece No. 1 (Include composer)"
       required
     ></v-text-field>
     <v-text-field
       v-model="piece_2"
       :rules="nameRules"
-      :counter="10"
+      :counter="30"
       label="Piece No. 2 (Include composer)"
       required
     ></v-text-field>
     <v-text-field
       v-model="length"
       :rules="nameRules"
-      :counter="10"
+      :counter="20"
       label="Total Length (Both Pieces)"
       required
     ></v-text-field>
@@ -68,7 +68,7 @@
     ></v-select>
     <v-text-field
       v-model="accompanist_1"
-      :counter="10"
+      :counter="30"
       label="If so, please list the accompanist"
       required
     ></v-text-field>
@@ -79,13 +79,13 @@
     ></v-select>
     <v-text-field
       v-model="accompanist_2"
-      :counter="10"
+      :counter="30"
       label="If so, please list the accompanist"
       required
     ></v-text-field>
     <v-text-field
       v-model="instrument"
-      :counter="10"
+      :counter="30"
       label="If student is not a pianist, list the instrument"      
     ></v-text-field>
     <v-text-field
