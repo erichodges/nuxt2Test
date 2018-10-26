@@ -1,7 +1,7 @@
 <template>
 <v-container>
   <v-layout>    
-  <v-form ref="form" class="form" v-model="valid" lazy-validation action="https://formspree.io/mtac@iw401fi.33mail.com" method="post">
+  <v-form ref="form" class="form" v-model="valid" lazy-validation action="" name="recital" method="post" netlify>
     <v-select
       name="recitalItems"
       v-model="select"
