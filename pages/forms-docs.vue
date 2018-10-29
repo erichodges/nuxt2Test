@@ -1,13 +1,12 @@
 <template>
 <v-container>
   <v-layout>    
-  <v-form ref="form" class="form" v-model="valid" lazy-validation action="" name="recital" method="post" netlify>
-    <input type="hidden" name="form-name" value="recital" />
+  <v-form ref="form" class="form" v-model="valid" lazy-validation action="" name="Recital" method="post" netlify>
+    <input type="hidden" name="form-name" value="Recital" />
     <v-select
       name="recitalItems"
       v-model="select"
       :items="recital"
-      :rules="[v => !!v || 'Item is required']"
       label="Which Recital?"
       required
     ></v-select>
@@ -18,7 +17,6 @@
       :counter="30"
       label="Teacher Name"
       
-      value="test joe schmo"
     ></v-text-field>
     <v-text-field
       v-model="studentName"
@@ -26,7 +24,6 @@
       :counter="30"
       label="Student Name"
       
-      value="test mozart"
     ></v-text-field>
     <v-text-field
       v-model="age"
@@ -34,7 +31,6 @@
       :counter="10"
       label="Student Age"
       
-      value="test 10"
     ></v-text-field>
     <v-text-field
       v-model="level"
@@ -42,7 +38,6 @@
       :counter="20"
       label="Student Level"
       
-      value="test"
     ></v-text-field>
     <v-text-field
       v-model="piece_1"
@@ -136,7 +131,7 @@
       teacherName: '',
       nameRules: [
         v => !!v || 'Name is required',
-        v => (v && v.length <= 30) || 'Name must be less than 10 characters'
+        v => (v && v.length <= 30) || 'Name must be less than 30 characters'
       ],
       studentName: '',
       age: '',
@@ -144,7 +139,6 @@
       piece_1: '',
       piece_2: '',
       length: '',
-      select: null,
       itemsSelectPiece_1: [
         'Yes',
         'No'
@@ -161,6 +155,28 @@
     }),
 
     methods: {
+      submit () {
+        if (this.$refs.form.validate()) {
+          // Native form submission is not yet supported
+          axios.post('/api/submit', {
+            recital: this.recital,
+            teacherName: this.teacherName,
+            studentName: this.studentName,
+            age: this.age,
+            level: this.level,
+            piece_1: this.piece_1,
+            piece_2: this.piece_2,
+            length: this.length,
+            itemsSelectPiece_1: this.itemsSelectPiece_1,
+            accompanist_1: this.accompanist_1,
+            itemsSelectPiece_2: this.itemsSelectPiece_2,
+            accompanist_2: this.accompanist_2,
+            instrument: this.instrument,
+            instrumentation_1: this.instrumentation_1,
+            instrumentation_2: this.instrumentation_2
+          })
+        }
+      },
       clear () {
         this.$refs.form.reset()
       }
