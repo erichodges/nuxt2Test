@@ -1,7 +1,7 @@
 <template>
 <v-container>
   <v-layout>
-  <h3>This form is under construction and should be ready relatively soon</h3>
+  <h3 class="form">This form is under construction and should be ready relatively soon</h3>
   </v-layout>
   </v-container>
 </template>
