@@ -10,7 +10,6 @@
       :rules="[v => !!v || 'Item is required']"
       label="Which Recital?"
       required
-      value="test recital 1"
     ></v-select>
     <v-text-field
       name="teacher name"
