@@ -17,7 +17,7 @@
       :rules="nameRules"
       :counter="30"
       label="Teacher Name"
-      required
+      
       value="test joe schmo"
     ></v-text-field>
     <v-text-field
@@ -25,7 +25,7 @@
       :rules="nameRules"
       :counter="30"
       label="Student Name"
-      required
+      
       value="test mozart"
     ></v-text-field>
     <v-text-field
@@ -33,7 +33,7 @@
       :rules="nameRules"
       :counter="10"
       label="Student Age"
-      required
+      
       value="test 10"
     ></v-text-field>
     <v-text-field
@@ -41,7 +41,7 @@
       :rules="nameRules"
       :counter="20"
       label="Student Level"
-      required
+      
       value="test"
     ></v-text-field>
     <v-text-field
