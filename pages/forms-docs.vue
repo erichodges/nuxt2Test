@@ -120,7 +120,8 @@
   export default {
     data: () => ({
       valid: true,
-      recital: [
+      recital: null,
+      items: [
         'November 11 - Monthly Student Recital - Deadline: Nov. 6',
         'February 10 - Teen Recial - Ceadline: Feb. 3',
         'March 10 - Monthly Student Recital - Deadline: Mar. 3',
@@ -139,12 +140,14 @@
       piece_1: '',
       piece_2: '',
       length: '',
-      itemsSelectPiece_1: [
+      itemsSelectPiece_1: null,
+      items: [
         'Yes',
         'No'
       ],
       accompanist_1: '',
-      itemsSelectPiece_2: [
+      itemsSelectPiece_2: null,
+      items: [
         'Yes',
         'No'
       ],
