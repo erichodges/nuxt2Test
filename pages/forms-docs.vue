@@ -10,6 +10,7 @@
       :rules="[v => !!v || 'Item is required']"
       label="Which Recital?"
       required
+      value="test recital 1"
     ></v-select>
     <v-text-field
       name="teacher name"
@@ -18,6 +19,7 @@
       :counter="30"
       label="Teacher Name"
       required
+      value="test joe schmo"
     ></v-text-field>
     <v-text-field
       v-model="studentName"
@@ -25,6 +27,7 @@
       :counter="30"
       label="Student Name"
       required
+      value="test mozart"
     ></v-text-field>
     <v-text-field
       v-model="age"
@@ -32,6 +35,7 @@
       :counter="10"
       label="Student Age"
       required
+      value="test 10"
     ></v-text-field>
     <v-text-field
       v-model="level"
@@ -39,6 +43,7 @@
       :counter="20"
       label="Student Level"
       required
+      value="test"
     ></v-text-field>
     <v-text-field
       v-model="piece_1"
@@ -132,7 +137,7 @@
       teacherName: '',
       nameRules: [
         v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters'
+        v => (v && v.length <= 30) || 'Name must be less than 10 characters'
       ],
       studentName: '',
       age: '',
