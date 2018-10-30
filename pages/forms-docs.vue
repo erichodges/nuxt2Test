@@ -4,18 +4,18 @@
   <!-- <h3 class="form">This form is under construction and should be ready relatively soon</h3> -->
   <br>
   
-  <form class="form" name="contact" method="POST" netlify>
+  <form class="form" name="Recital Submission" method="POST" netlify>
     <p>
       <label class="label">Which Recital?</label>
         <br>
         <select class="select" name="Recital">
         <option value="select">- Select One -</option>
-        <option value="Recital1">November 11 - Monthly Student Recital - Deadline: Nov. 6</option>
-        <option value="Recital2">February 10 - Teen Recial - Ceadline: Feb. 3</option>
-        <option value="Recital3">March 10 - Monthly Student Recital - Deadline: Mar. 3</option>
-        <option value="Recital4">April 15 - Adult Recital - Deadline: Apr. 10</option>
-        <option value="Recital5">Date TBA - Composition & Improvisation Celbration - Deadline: TBA</option>
-        <option value="Recital6">June 3 - Spring Festival - Deadline: May 26</option>
+        <option value="November 11 - Monthly Student Recital - Deadline: Nov. 6">November 11 - Monthly Student Recital - Deadline: Nov. 6</option>
+        <option value="February 10 - Teen Recial - Ceadline: Feb. 3">February 10 - Teen Recial - Ceadline: Feb. 3</option>
+        <option value="March 10 - Monthly Student Recital - Deadline: Mar. 3">March 10 - Monthly Student Recital - Deadline: Mar. 3</option>
+        <option value="April 15 - Adult Recital - Deadline: Apr. 10">April 15 - Adult Recital - Deadline: Apr. 10</option>
+        <option value="Date TBA - Composition & Improvisation Celbration">Date TBA - Composition & Improvisation Celbration - Deadline: TBA</option>
+        <option value="June 3 - Spring Festival - Deadline: May 26">June 3 - Spring Festival - Deadline: May 26</option>
       </select>
     </p>
     <p>
@@ -107,11 +107,7 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      recitals: ['1', '2', '3']
-    })
-  }
+
 </script>
 
 <style lang="scss" scoped>
