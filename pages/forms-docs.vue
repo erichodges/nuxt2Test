@@ -74,7 +74,7 @@
     <p>
       <label class="label">Is the second piece a piano duet?</label>
       <br>
-      <select class="select" name="duet1" outline>
+      <select class="select" name="duet2" outline>
         <option value="select">- Select One -</option>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
