@@ -7,6 +7,10 @@
   <br>
   
   <form class="form" name="Recital Submission" method="POST" netlify>
+    <input type="hidden" name="form-name" value="Recital Submission" />
+    <p>
+      <label class="hidden">Don't fill this out: <input name="bot-field"></label>
+    </p>
     <p>
       <label class="label">Which Recital?</label>
         <br>
@@ -110,7 +114,7 @@
 
 <script>
   export default {
-    
+
   }
 </script>
 
@@ -123,6 +127,10 @@
 .form {
   width: 32rem;
   margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .label {

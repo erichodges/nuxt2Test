@@ -44,7 +44,7 @@
     <div>
       <nuxt /> 
     </div>
-    <v-footer dark height="auto">
+    <v-footer class="footerTwo" dark height="auto">
       <div class="caption copy">
         &copy;2018 MTAC Marin
       </div>
@@ -85,5 +85,9 @@
 .copy {
   margin-left: 1.3rem;
   padding: 5px 5px;
+}
+
+.footerTwo {
+  margin-top: auto;
 }
 </style>
