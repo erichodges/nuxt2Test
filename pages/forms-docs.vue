@@ -128,6 +128,7 @@
 }
 
 .select {
+  border-radius: 100px;
   outline-color: white;
   outline: 2px;
   background-color: rgb(122, 119, 119);
