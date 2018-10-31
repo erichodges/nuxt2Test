@@ -1,7 +1,9 @@
 <template>
 <v-container>
   <v-layout>
-  <!-- <h3 class="form">This form is under construction and should be ready relatively soon</h3> -->
+    <div class="outerDiv">
+  <h1>Recital Registration</h1>
+  
   <br>
   
   <form class="form" name="Recital Submission" method="POST" netlify>
@@ -95,10 +97,12 @@
       <input class="inputStyle" type="text" name="instrumentation2" />
     </p>
     <p>
-      <v-btn type="submit">Submit</v-btn>
+      <v-btn class="submitBtn" type="submit">Submit</v-btn>
     </p>
+    <br>
+    <br>
   </form>
-
+  </div>
 
   </v-layout>
   </v-container>
@@ -109,9 +113,14 @@
 </script>
 
 <style lang="scss" scoped>
+
+.outerDiv {
+  margin-top: 4.5rem;
+}
+
 .form {
   width: 32rem;
-  margin-top: 6.5rem;
+  margin-top: 2rem;
 }
 
 .label {
@@ -123,7 +132,7 @@
   outline: 2px;
   background-color: rgb(122, 119, 119);
   padding-left: 1rem;
-
+  width: 70%;
 }
 
 .inputStyle {
@@ -134,7 +143,7 @@
   background-color: rgb(122, 119, 119);
   border-radius: 100px;
   padding-left: 1rem;
-  width: 60%;
+  width: 70%;
   transition: all .2s;
 
   &:focus {
@@ -143,8 +152,12 @@
     background-color: white;
     color: black;
     padding-left: 1rem;
-    width: 70%;
+    width: 80%;
   }
+}
+
+.submitBtn {
+  margin-top: .8rem;
 }
 
 </style>
