@@ -87,12 +87,12 @@
       <input class="inputStyle" type="text" name="instrument" />
     </p>
     <p>
-      <label class="label">Instrumentation of Piece No. 1 (Include all performers' names"</label>
+      <label class="label">Instrumentation of Piece No. 1 (Include all performers' names)</label>
       <br>
       <input class="inputStyle" type="text" name="instrumentation1" />
     </p>
     <p>
-      <label class="label">Instrumentation of Piece No. 2 (Include all performers' names"</label>
+      <label class="label">Instrumentation of Piece No. 2 (Include all performers' names)</label>
       <br>
       <input class="inputStyle" type="text" name="instrumentation2" />
     </p>
