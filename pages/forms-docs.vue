@@ -10,12 +10,10 @@
         <br>
         <select class="select" name="Recital">
         <option value="select">- Select One -</option>
-        <option value="November 11 - Monthly Student Recital - Deadline: Nov. 6">November 11 - Monthly Student Recital - Deadline: Nov. 6</option>
-        <option value="February 10 - Teen Recial - Ceadline: Feb. 3">February 10 - Teen Recial - Ceadline: Feb. 3</option>
-        <option value="March 10 - Monthly Student Recital - Deadline: Mar. 3">March 10 - Monthly Student Recital - Deadline: Mar. 3</option>
-        <option value="April 15 - Adult Recital - Deadline: Apr. 10">April 15 - Adult Recital - Deadline: Apr. 10</option>
-        <option value="Date TBA - Composition & Improvisation Celbration">Date TBA - Composition & Improvisation Celbration - Deadline: TBA</option>
-        <option value="June 3 - Spring Festival - Deadline: May 26">June 3 - Spring Festival - Deadline: May 26</option>
+        <option value="12/02/18 Monthly Student Recital">12/02/18 Monthly Student Recital</option>
+        <option value="02/10/19 Teen Recital">02/10/19 Teen Recital</option>
+        <option value="03/10/19 Monthly Student Recital">03/10/19 Monthly Student Recital</option>
+        <option value="06/02/19 Spring Festival">06/02/19 Spring Festival</option>
       </select>
     </p>
     <p>
