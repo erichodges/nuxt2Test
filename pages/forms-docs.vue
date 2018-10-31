@@ -6,7 +6,7 @@
   
   <br>
   
-  <form class="form" name="Recital Submission" netlify-honeypot="bot-field" acion="/submitted" method="POST" netlify>
+  <form class="form" name="Recital Submission" netlify-honeypot="bot-field" action="/submitted" method="POST" netlify>
     <input type="hidden" name="form-name" value="Recital Submission" />
     <p>
       <label class="hidden">Don't fill this out: <input name="bot-field"></label>
