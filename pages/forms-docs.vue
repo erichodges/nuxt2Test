@@ -125,7 +125,6 @@
 }
 
 .form {
-  width: 32rem;
   margin-top: 2rem;
 }
 
@@ -137,6 +136,13 @@
   font-size: 1.1rem;
 }
 
+p {
+  width: 80%;
+  margin: 0px;
+    @media screen and (max-width: 530px) {
+    // width: 40%;
+  }
+}
 .select {
   border-radius: 100px;
   outline-color: white;
@@ -144,6 +150,10 @@
   background-color: rgb(122, 119, 119);
   padding-left: 1rem;
   width: 70%;
+
+    @media screen and (max-width: 530px) {
+    // width: 40%;
+  }
 }
 
 .inputStyle {
@@ -157,6 +167,10 @@
   width: 70%;
   transition: all .2s;
 
+  @media screen and (max-width: 530px) {
+    // width: 40%;
+  }
+
   &:focus {
     outline: 1px;
     outline-color: white;
@@ -164,6 +178,10 @@
     color: black;
     padding-left: 1rem;
     width: 80%;
+
+    @media screen and (max-width: 530px) {
+    //  width: 40%;
+    }
   }
 }
 
