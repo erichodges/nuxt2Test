@@ -12,24 +12,39 @@
     </div>
     </v-container>
     <div>    
-        <v-data-table
-        :headers="headers"
-        :items="teachers"
-        :pagination.sync="pagination"
-        :rows-per-page-items="rows"
-        class="elevation-2 heading-text"
-        :loading="false"    
-        >    
-          <template slot="items" slot-scope="props">
-            <td style="font-size:1rem" class="text-xs-left table-text">{{ props.item.instrument }}</td>
-            <td class="text-xs-left table-text">{{ props.item.city }}</td>
-            <td class="text-xs-left table-text">{{ props.item.travel }}</td>
-            <td class="text-xs-left table-text">{{ props.item.firstName }}</td>
-            <td class="text-xs-left table-text">{{ props.item.lastName }}</td>                        
-            <td class="text-xs-left table-text">{{ props.item.phone }}</td>
-            <td class="text-xs-left table-text">{{ props.item.email }}</td>
-          </template>
-        </v-data-table>
+      <v-data-table
+      :headers="headers"
+      :items="teachers"
+      :pagination.sync="pagination"
+      :rows-per-page-items="rows"
+      class="elevation-2 heading-text"
+      :loading="false"    
+      >    
+        <template slot="items" slot-scope="props">
+          <td style="font-size:1rem" class="text-xs-left table-text">{{ props.item.instrument }}</td>
+          <td class="text-xs-left table-text">{{ props.item.city }}</td>
+          <td class="text-xs-left table-text">{{ props.item.travel }}</td>
+          <td class="text-xs-left table-text">{{ props.item.firstName }}</td>
+          <td class="text-xs-left table-text">{{ props.item.lastName }}</td>                        
+          <td class="text-xs-left table-text">{{ props.item.phone }}</td>
+          <td class="text-xs-left table-text">{{ props.item.email }}</td>
+        </template>
+      </v-data-table>
+    </div>
+    <div>
+      <v-container>
+      
+      <h3>
+        If you need to search for a teacher in California but outside of Marin, use the button below to search the MTAC database: 
+      </h3>
+      <br>
+        <a href="http://www.mtac.org/about-us/find-a-teacher/">
+          <v-btn>MTAC Teachers</v-btn>
+        </a>
+        <br>
+        <br>
+        <br>
+      </v-container>
     </div>
   </main>
 </template>
