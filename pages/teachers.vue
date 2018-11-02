@@ -35,7 +35,7 @@
       <v-container>
       
       <h3>
-        If you need to search for a teacher in California but outside of Marin, use the button below to search the MTAC database: 
+        If you need to search for a teacher elsewhere in California, use the button below to search the MTAC database: 
       </h3>
       <br>
         <a href="http://www.mtac.org/about-us/find-a-teacher/">
