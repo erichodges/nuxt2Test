@@ -45,14 +45,6 @@ export default {
   grid-gap: 1rem;
   grid-auto-flow: dense;
 
-  &__item {
-    &--2 {
-      // grid-row: 2 / span 1;
-      // height: 100%;
-      // width: 100%;
-      // object-fit: cover;
-    }
-  }
 
   &__img {
     width: 100%;
