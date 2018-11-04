@@ -147,7 +147,7 @@ p {
   border-radius: 100px;
   outline-color: white;
   outline: 2px;
-  background-color: rgb(122, 119, 119);
+  background-color: rgb(102, 100, 100);
   padding-left: 1rem;
   width: 70%;
 
@@ -161,7 +161,7 @@ p {
   border-color: white;
   outline: 1px !important;
   outline-color: white;
-  background-color: rgb(122, 119, 119);
+  background-color: rgb(102, 100, 100);
   border-radius: 100px;
   padding-left: 1rem;
   width: 70%;
