@@ -151,8 +151,8 @@ p {
 }
 
 .inputStyle {
-  border: 2px !important;
-  border-color: white;
+  // border: 2px !important;
+  // border-color: white;
   outline: 1px !important;
   outline-color: white;
   background-color: rgb(102, 100, 100);
@@ -160,8 +160,6 @@ p {
   padding-left: 1rem;
   width: 70%;
   transition: all .2s;
-
-
 
   &:focus {
     outline: 1px;
