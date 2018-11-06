@@ -139,9 +139,7 @@
 p {
   width: 80%;
   margin: 0px;
-    @media screen and (max-width: 530px) {
-    // width: 40%;
-  }
+
 }
 .select {
   border-radius: 100px;
@@ -150,10 +148,6 @@ p {
   background-color: rgb(102, 100, 100);
   padding-left: 1rem;
   width: 70%;
-
-    @media screen and (max-width: 530px) {
-    // width: 40%;
-  }
 }
 
 .inputStyle {
@@ -167,9 +161,7 @@ p {
   width: 70%;
   transition: all .2s;
 
-  @media screen and (max-width: 530px) {
-    // width: 40%;
-  }
+
 
   &:focus {
     outline: 1px;
@@ -179,9 +171,6 @@ p {
     padding-left: 1rem;
     width: 80%;
 
-    @media screen and (max-width: 530px) {
-    //  width: 40%;
-    }
   }
 }
 
