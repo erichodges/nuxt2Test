@@ -162,8 +162,8 @@ p {
   transition: all .2s;
 
   &:focus {
-    outline: 1px;
-    outline-color: white;
+    // outline: 1px;
+    // outline-color: white;
     background-color: white;
     color: black;
     padding-left: 1rem;
