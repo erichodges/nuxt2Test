@@ -35,10 +35,13 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/contentful',
     '@/plugins/vuetify'
   ],
   env: {
-    TEACHERS_KEY: process.env.TEACHERS_KEY
+    TEACHERS_KEY: process.env.TEACHERS_KEY,
+    CTF_SPACE_ID: config.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN
   },
   /*
   ** Nuxt.js modules

@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/dotenv": "^1.1.1",
+    "contentful": "^7.0.5",
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
     "vuetify": "^1.2.4"

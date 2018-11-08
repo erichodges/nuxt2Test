@@ -41,11 +41,37 @@
       <p>
         If you are a teacher who is interested in joining MTAC, please contact our Membership Secretary, Katherine Butler, at mtacmarinmembership [at] gmail.com
       </p> 
+
+      <h3>{{items.fields.one}}</h3>
   </v-container>
 </template>
 
 <script>
+  import {createClient} from '~/plugins/contentful.js'
+  
+  const client = createClient()
 
+  export default {
+  // make use of your env variables 
+    asyncData ({env}) {
+      return Promise.all([
+        client.getEntries({
+         // provide all other query parameters from env variable
+      
+         content_type: env.boardOfDirectors_CT_ID
+        })
+      ]).then(([entries]) => {
+        // return data that should be available
+        // in the template
+        return {
+         //access the items object of your JSON response
+          items: entries.items[0]
+        }
+        
+      }).catch(console.error)
+    }
+  }
+  
 </script>
 
 <style lang="scss">
