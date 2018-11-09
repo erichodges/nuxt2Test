@@ -1,5 +1,6 @@
 const pkg = require('./package')
 const nodeExternals = require('webpack-node-externals')
+const config = require('./.contentful.json')
 
 module.exports = {
   mode: 'universal',
