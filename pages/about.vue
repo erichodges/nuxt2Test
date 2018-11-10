@@ -65,7 +65,6 @@
          //access the items object of your JSON response
           items: entries.items[0]
         }
-          console.log(items.fields.one);
       }).catch(console.error)
     }
   }
