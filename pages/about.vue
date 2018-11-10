@@ -55,10 +55,8 @@
   // make use of your env variables 
     asyncData ({env}) {
       return Promise.all([
-        client.getEntries({
-         // provide all other query parameters from env variable
-      
-         content_type: env.BOARDOFDIRECTORS_CT_ID
+        client.getEntries({    
+         content_type: env.boardOfDirectors_CT_ID
         })
       ]).then(([entries]) => {
         // return data that should be available
@@ -67,7 +65,7 @@
          //access the items object of your JSON response
           items: entries.items[0]
         }
-          console.log(items);        
+          console.log(items.fields.one);
       }).catch(console.error)
     }
   }
