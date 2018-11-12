@@ -37,12 +37,58 @@
         Our performance competition is named in honor of Margaret Bean Davis, a wonderful musician and composer who was also a long-time supporter of music in Marin County.   Each year talented young pianists compete before three distinguished pianists in six levels:  Intermediate A, B, C and D and Advanced A and B.  The winners then perform at an annual Winners' Recital in the late spring.
       </p>
 
-      <br>
       <p>
         If you are a teacher who is interested in joining MTAC, please contact our Membership Secretary, Katherine Butler, at mtacmarinmembership [at] gmail.com
       </p> 
+      <br>
+      <h3>Branch Officers</h3>
+      <h4>President: &nbsp; {{officers.fields.branchOfficersPresident}}</h4>
+      <h4>Vice President: &nbsp; {{officers.fields.vicePresident}}</h4>
+      <h4>Recording Secretary: &nbsp; {{officers.fields.recordingSecretary}}</h4>
+      <h4>Membership Secretary: &nbsp; {{officers.fields.membershipSecretary}}</h4>
+      <h4>Treasurer:  &nbsp; {{officers.fields.treasurer}}</h4>
+      
+      <br>
+      <h3>Board of Directors</h3>
+      <h4>{{BOD.fields.one}}</h4>
+      <h4>{{BOD.fields.two}}</h4>
+      <h4>{{BOD.fields.three}}</h4>
+      <h4>{{BOD.fields.four}}</h4>
+      <br>
+      <h3>Program Chairs</h3>
+      <h4>Adult Recital: <br> {{chairs.fields.adultRecital}}</h4><br>
+      <h4>Branch Directory: <br> {{chairs.fields.branchDirectory}}</h4><br>
+      <h4>Honors Recital: <br> {{chairs.fields.honorsRecital}}</h4><br>
+      <h4>Librarian/Historian: <br> {{chairs.fields.librarianhistorian}}</h4><br>
+      <h4>Certificate of Merit: <br> {{chairs.fields.certificateOfMerit}}</h4><br>
+      <h4>Composers Today/Improvisation: <br> {{chairs.fields.composersTodayImprovisation}}</h4><br>
+      <h4>Margaret B. Davis Memorial Music Competition: <br> {{chairs.fields.mbdMemorialMusicCompetition}}</h4><br>
+      <h4>Monthly Student Recitals: <br> {{chairs.fields.studentRecitals}}</h4><br>
+      <h4>Scholarship: <br> {{chairs.fields.scholarshipChair}}</h4><br>
+      <h4>Spring festival: <br> {{chairs.fields.springFestival}}</h4><br>
+      <h4>Teen Recital: <br> {{chairs.fields.teenRecital}}</h4><br>
+      <h4>VOCE: <br> {{chairs.fields.voce}}</h4><br>
+      <br>
 
-      <h3>{{items.fields.one}}</h3>
+      <h3>MTAC Mission Statement</h3>
+      <p>
+        {{mission.fields.missionStatement}}
+      </p>
+      <br>
+
+      <h3>MTAC Vision Statement (Accepted in 2009)</h3>
+      <p>
+        {{vision.fields.visionStatement}}
+      </p>
+      <br>
+
+      <h3>MTAC State Office</h3>
+      <p>
+        {{office.fields.info}}
+      </p>
+
+
+
   </v-container>
 </template>
 
@@ -56,19 +102,39 @@
     asyncData ({env}) {
       return Promise.all([
         client.getEntries({    
-         content_type: env.boardOfDirectors_CT_ID
+         content_type: 'boardOfDirectors'
+        }),
+        client.getEntries({    
+         content_type: 'branchOfficers'
+        }),
+        client.getEntries({    
+         content_type: 'programChairs'
+        }),
+        client.getEntries({    
+         content_type: 'missionStatement'
+        }),
+        client.getEntries({    
+         content_type: 'visionStatement'
+        }),
+        client.getEntries({    
+         content_type: 'stateOfficeInfo'
         })
-      ]).then(([entries]) => {
+      ]).then(([entries, officers, chairs, mission, vision, office]) => {
         // return data that should be available
         // in the template
         return {
          //access the items object of your JSON response
-          items: entries.items[0]
+          BOD: entries.items[0],
+          officers: officers.items[0],
+          chairs: chairs.items[0],
+          mission: mission.items[0],
+          vision: vision.items[0],
+          office: office.items[0],
         }
+        
       }).catch(console.error)
     }
   }
-
 </script>
 
 <style lang="scss">
