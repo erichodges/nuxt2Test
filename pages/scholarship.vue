@@ -1,6 +1,6 @@
 <template>
   <v-container class="scholar-header">
-    <div class="scholarDiv group">
+    <div class="scholarDiv">
     <h1>Discovery Scholarship</h1>
     <br>
     <figure class="ds1">
@@ -54,19 +54,6 @@ export default {};
 </script>
 
 <style lang="scss">
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
 .scholar-header {
   margin-top: 4rem;
   height: 100vh;
