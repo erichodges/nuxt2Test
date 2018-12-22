@@ -17,7 +17,7 @@
           <v-btn class="nav-btn about-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
-          <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
+          <!-- <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn> -->
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn about-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
         </ul>
@@ -36,7 +36,7 @@
           <v-btn class="nav-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
-          <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
+          <!-- <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn> -->
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
           <div class="toolbar-spacer"></div>
@@ -60,19 +60,19 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        clipped: true,
-        drawer: false,
-        fixed: false,
-        miniVariant: false,
-        right: false,
-        rightDrawer: false,
-        title: 'Nuxt/Vuetify'
-      }
-    }
+export default {
+  data() {
+    return {
+      clipped: true,
+      drawer: false,
+      fixed: false,
+      miniVariant: false,
+      right: false,
+      rightDrawer: false,
+      title: "Nuxt/Vuetify"
+    };
   }
+};
 </script>
 
 
@@ -80,11 +80,12 @@
 <style lang="scss">
 /* disable-resize-watcher in v-navigation-drawer - this keeps the app from adding the navigation-drawer on wider screens  */
 
-  * {
-  box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
-  font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
+  font-family: "Neue Haas Grotesk W01 Disp", Helvetica, sans-serif;
   line-height: 1;
   font-size: 100%;
   font-weight: 600;
@@ -100,11 +101,11 @@ html {
 }
 
 .v-toolbar__title:not(:first-child) {
-      margin-left: 0 !important;
-    }
+  margin-left: 0 !important;
+}
 
 @media only screen and (max-width: 60rem) {
-  .toolbar-items {    
+  .toolbar-items {
     visibility: hidden !important;
     display: none;
     width: 0 !important;
@@ -116,12 +117,12 @@ html {
     left: -1rem;
     visibility: hidden !important;
     display: none;
-    width: 0 !important;   
+    width: 0 !important;
   }
-  .v-toolbar__content, .v-toolbar__extension {
-  padding: 0 !important;
+  .v-toolbar__content,
+  .v-toolbar__extension {
+    padding: 0 !important;
   }
-
 }
 
 .toolbar-spacer {
@@ -135,7 +136,7 @@ html {
 
 /* Side Nav  */
 .sidenav-ul {
-  padding-left: 1rem; 
+  padding-left: 1rem;
 }
 
 .sidenav-link-style {
@@ -144,7 +145,6 @@ html {
   list-style: none;
   margin: 10px;
   text-decoration: none;
-  
 }
 
 .about-btn .v-btn__content {
@@ -157,53 +157,53 @@ html {
 }
 
 .div-with-background {
-  height: 100vh; 
+  height: 100vh;
   /* background-image: url('~/static/images/575839.jpg');       */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media (min-width: 1920px) and (max-width: 2500px){
-    background-image: url('/images/575839-75pc.jpg');
+  @media (min-width: 1920px) and (max-width: 2500px) {
+    background-image: url("/images/575839-75pc.jpg");
   }
 
   @media (min-width: 1400px) and (max-width: 1920px) {
-    background-image: url('/images/575839-1920px.jpg');
+    background-image: url("/images/575839-1920px.jpg");
   }
 
   @media (min-width: 1099px) and (max-width: 1400px) {
-    background-image: url('/images/575839-1400px.jpg');
+    background-image: url("/images/575839-1400px.jpg");
   }
 
   @media (min-width: 900px) and (max-width: 1099px) {
-    background-image: url('/images/575839-1099px.jpg');
+    background-image: url("/images/575839-1099px.jpg");
   }
 
   @media (min-width: 752px) and (max-width: 899px) {
-    background-image: url('/images/575839-900px.jpg');
+    background-image: url("/images/575839-900px.jpg");
   }
 
   @media (min-width: 400px) and (max-width: 752px) {
-    background-image: url('/images/575839-752px.jpg');
+    background-image: url("/images/575839-752px.jpg");
   }
 
   @media (min-width: 300px) and (max-width: 651px) {
-    background-image: url('/images/575839-651px.jpg');
+    background-image: url("/images/575839-651px.jpg");
   }
 
   @media (min-width: 2500px) and (max-width: 3799px) {
-    background-image: url('/images/575839-75pc.jpg');
+    background-image: url("/images/575839-75pc.jpg");
   }
 
   @media (min-width: 3800px) {
-    background-image: url('/images/575839-100pc.jpg');
+    background-image: url("/images/575839-100pc.jpg");
   }
 }
 
 /* this removes all caps from the buttons */
-  #app .v-btn {
-    text-transform: none;
-  }
+#app .v-btn {
+  text-transform: none;
+}
 
 .index-footer {
   display: flex;
@@ -216,8 +216,7 @@ html {
 }
 
 .state-logo {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   margin-right: 1.3rem;
 }
-
 </style>

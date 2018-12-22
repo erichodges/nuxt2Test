@@ -16,7 +16,7 @@
           <v-btn class="nav-btn about-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
-          <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
+          <!-- <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn> -->
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn about-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
         </ul>
@@ -34,7 +34,7 @@
           <v-btn class="nav-btn" to="/about" flat color="white"><h3>About</h3></v-btn>
           <v-btn class="nav-btn" to="/teachers" flat color="white"><h3>Teachers</h3></v-btn>
           <v-btn class="nav-btn" to="/calendar" flat color="white"><h3>Calendar</h3></v-btn>
-          <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn>
+          <!-- <v-btn class="nav-btn" to="/forms-docs" flat color="white"><h3>Forms/Docs</h3></v-btn> -->
           <v-btn class="nav-btn" to="/scholarship" flat color="white"><h3>Scholarship</h3></v-btn>
           <v-btn class="nav-btn" to="/media" flat color="white"><h3>Media</h3></v-btn>
           <div class="toolbar-spacer"></div>
@@ -53,34 +53,32 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        clipped: true,
-        drawer: false,
-        fixed: false,
-        miniVariant: false,
-        right: false,
-        rightDrawer: false,
-        title: 'Nuxt/Vuetify'
-      }
-    }
+export default {
+  data() {
+    return {
+      clipped: true,
+      drawer: false,
+      fixed: false,
+      miniVariant: false,
+      right: false,
+      rightDrawer: false,
+      title: "Nuxt/Vuetify"
+    };
   }
+};
 </script>
 
 
 <style lang="scss">
-
 /* this removes all caps from the buttons */
-  #app .btn {
-    text-transform: none !important;
-    color: #4e4e4e;
-  }
+#app .btn {
+  text-transform: none !important;
+  color: #4e4e4e;
+}
 
 .about-btn .v-btn__content {
   justify-content: left;
 }
-
 
 .copy {
   margin-left: 1.3rem;
